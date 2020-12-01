@@ -1,0 +1,29 @@
+<template>
+  <view>123</view>
+  <list></list>
+  <navigator url="/pages/order/list">跳转</navigator>
+</template>
+
+<script>
+import { createPage } from '@mpxjs/core'
+import { getUser } from 'api/user'
+
+createPage({
+  onLoad () {
+    this.$toast('232')
+  }
+})
+</script>
+
+<script type="application/json">
+  {
+    "usingComponents": {
+      "list": "../components/list"
+    }
+  }
+</script>
+
+<style lang="sass" scoped>
+view
+  color: red
+</style>

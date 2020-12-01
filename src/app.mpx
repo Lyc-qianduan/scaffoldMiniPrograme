@@ -1,0 +1,26 @@
+<script>
+import mpx, { createApp } from '@mpxjs/core'
+import { showToast } from 'utils/wx'
+
+mpx.prototype.$toast = showToast
+
+createApp({
+  onLaunch () {
+  }
+})
+</script>
+
+<style src="./style/index.sass" lang="sass"></style>
+<style src="@vant/weapp/dist/common/index.wxss"></style>
+
+<script type="application/json">
+  {
+    "pages": [
+      "./pages/index",
+      "./pages/order/list"
+    ],
+    "usingComponents": {
+      "van-icon": "@vant/weapp/dist/icon/index"
+    }
+  }
+</script>
