@@ -6,12 +6,14 @@
 
 <script>
 import { createPage } from '@mpxjs/core'
-import { getUser } from 'api/user'
+
+import { BookModel } from './../models/user'
+const bookModel = new BookModel()
 
 createPage({
   async onLoad () {
     this.$toast('232')
-    const res = await getUser()
+    const res = await bookModel.getUser()
     console.log(res)
   }
 })
