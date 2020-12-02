@@ -9,8 +9,10 @@ import { createPage } from '@mpxjs/core'
 import { getUser } from 'api/user'
 
 createPage({
-  onLoad () {
+  async onLoad () {
     this.$toast('232')
+    const res = await getUser({ method: 'get' })
+    console.log(res)
   }
 })
 </script>
