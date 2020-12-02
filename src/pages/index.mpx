@@ -7,7 +7,7 @@
 <script>
 import { createPage } from '@mpxjs/core'
 
-import { BookModel } from './../models/user'
+import { BookModel } from './../models/book'
 const bookModel = new BookModel()
 
 createPage({

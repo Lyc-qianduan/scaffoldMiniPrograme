@@ -7,7 +7,7 @@
  * @FilePath: /mpx-tpl/src/models/user.js
  */
 
-import { Http } from './../utils/requestClass.js'
+import { Http } from '../utils/requestClass.js'
 
 const isGetMethod = 'get'
 
