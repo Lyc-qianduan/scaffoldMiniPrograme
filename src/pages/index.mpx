@@ -12,8 +12,7 @@ const bookModel = new BookModel()
 
 createPage({
   async onLoad () {
-    this.$toast('232')
-    const res = await bookModel.getUser()
+    const res = await bookModel.getHotList()
     console.log(res)
   }
 })
