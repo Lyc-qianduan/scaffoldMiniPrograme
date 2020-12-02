@@ -11,7 +11,7 @@ import { getUser } from 'api/user'
 createPage({
   async onLoad () {
     this.$toast('232')
-    const res = await getUser({ method: 'get' })
+    const res = await getUser()
     console.log(res)
   }
 })

@@ -34,12 +34,10 @@ fly.interceptors.response.use(
   }
 )
 
-const request = function (url, data = {}, config = requestConfig) {
-  let { method, ...rest } = data
-  if (!method) method = 'post'
+const request = function (url, data, method = 'post', config = requestConfig) {
   return fly.request(
     url,
-    rest,
+    data,
     {
       ...config,
       method
